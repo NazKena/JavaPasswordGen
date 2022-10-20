@@ -16,7 +16,7 @@ let passwordlength = prompt ("How many charachters between 8 and 124 do you want
   if (isNaN(passwordlength))
   alert ("no value. please enter a number.");
   if (passwordlength <8 || passwordlength >128)
-  alert ("please enter a value betwwen 8 and 128")
+  alert ("please enter a value between 8 and 128")
 }
 
 const UserIncCL =confirm ("Do you want to add a capital letter?")
