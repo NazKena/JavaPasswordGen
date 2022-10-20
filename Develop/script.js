@@ -11,6 +11,22 @@ function generatePassword () {
   console.log ("allDigits")
 }
 
+
+let passwordlength = prompt ("How many charachters between 8 and 124 do you want in your password?");{
+  if (isNaN(passwordlength))
+  alert ("no value. please enter a number.");
+  if (passwordlength <8 || passwordlength >128)
+  alert ("please enter a value betwwen 8 and 128")
+}
+
+const UserIncCL =confirm ("Do you want to add a capital letter?")
+const UserIncLC = confirm ("Do you want to add a lowercase letter?")
+const UserIncNumber =-confirm("Do you want to add numbers?")
+const UserIncSymbols = confirm("Do you want to add symbols?")
+
+
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
