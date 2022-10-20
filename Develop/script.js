@@ -7,6 +7,9 @@ function generatePassword () {
   const charachterAmountNumbers = ["0,1,2,3,4,5,6,7,8,9"];
   const characterAmountSymbols= ["!","@","£","$","%","%","_","-","<",">",];
 
+  const allDigits = [...charachterAmountCL,...charachterAmountLC,...charachterAmountNumbers,...characterAmountSymbols]
+  console.log ("allDigits")
+}
 
 // Write password to the #password input
 function writePassword() {
