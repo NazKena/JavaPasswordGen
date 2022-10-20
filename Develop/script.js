@@ -24,9 +24,10 @@ const UserIncLC = confirm ("Do you want to add a lowercase letter?")
 const UserIncNumber =-confirm("Do you want to add numbers?")
 const UserIncSymbols = confirm("Do you want to add symbols?")
 
-
-
-
+for (const i=0; i< passwordlength; i++) {
+  password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.lenghth - 1)))
+}
+  
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
