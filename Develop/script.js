@@ -11,13 +11,14 @@ function generatePassword () {
   console.log ("allDigits")
 }
 
-
-let passwordlength = prompt ("How many characters between 8 and 124 do you want in your password?");{
-  if (isNaN(passwordlength))
-  alert ("no value. please enter a number.");
-  if (passwordlength <8 || passwordlength >128)
-  alert ("please enter a value between 8 and 128")
-}
+var pw= prompt ("Please choose a length between 8 and 128 characters");
+if (pw<8 || pw >128){
+  alert ("Incorrect password length")
+  generatePassword ()
+} else if (pw === '' || isNaN(pw)) {
+  alert ("Please enter valid password between 8 and 128")
+  generatePassword ()
+} 
 
 const UserIncCL =confirm ("Do you want to add a capital letter?")
 const UserIncLC = confirm ("Do you want to add a lowercase letter?")
@@ -28,14 +29,15 @@ for (const i=0; i< passwordlength; i++) {
   password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.lenghth - 1)))
 }
   
+
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+var password = generatePassword();
+var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-
+passwordText.value = password;
 }
 
 // Add event listener to generate button
+
 generateBtn.addEventListener("click", writePassword);
