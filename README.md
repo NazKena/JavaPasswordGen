@@ -4,7 +4,7 @@
 
 ![Screenshot](./Develop/127.0.0.1_5500_Develop_index.html.jpeg)
 
-[GitHub Link](https://github.com/NazKena)
+[GitHub Link](https://github.com/NazKena/JavaPasswordGen)
 
-[Deployed Link](http://127.0.0.1:5501/Develop/index.html)
+[Deployed Link](https://nazkena.github.io/JavaPasswordGen/)
 
